@@ -89,56 +89,56 @@ def fill_matrix(job, data, entries):
     for os_env, pres in entries.items():
         for pre_dict in pres:
             for pre, premeta in pre_dict.items():
-                for product in ('ansible', 'ansible-base', 'ansible-core'):
-                    if premeta:
-                        if product in premeta.get('exclude', []):
-                            continue
-
-                    # Handle the case where we define a product, but no versions
-                    # for it.
-                    if data[product] is None:
+                product = 'ansible-core'
+                if premeta:
+                    if product in premeta.get('exclude', []):
                         continue
 
-                    for version in data[product]:
-                        pre_values = []  # Used in pretty_name
-                        matrix_entry = {
-                            'dockerfile': os_env,
-                            'version': version,
-                            'product': product,
-                            'pre': pre,
-                            'build_args': '',
-                        }
-                        if premeta:
-                            version_re = premeta.get('version_re', '')
-                            if version_re and not re.search(version_re, version):
-                                continue
+                # Handle the case where we define a product, but no versions
+                # for it.
+                if data[product] is None:
+                    continue
 
-                            if 'rc' in premeta.get('exclude', []) and 'rc' in version:
-                                continue
+                for version in data[product]:
+                    pre_values = []  # Used in pretty_name
+                    matrix_entry = {
+                        'dockerfile': os_env,
+                        'version': version,
+                        'product': product,
+                        'pre': pre,
+                        'build_args': '',
+                    }
+                    if premeta:
+                        version_re = premeta.get('version_re', '')
+                        if version_re and not re.search(version_re, version):
+                            continue
 
-                            if 'beta' in premeta.get('exclude', []) and 'b' in version:
-                                continue
+                        if 'rc' in premeta.get('exclude', []) and 'rc' in version:
+                            continue
 
-                            build_args = premeta.get('build-args')
-                            if build_args:
-                                for k, v in build_args.items():
-                                    matrix_entry['build_args'] += \
-                                        ' --build-arg %s=%s' % (k, v)
+                        if 'beta' in premeta.get('exclude', []) and 'b' in version:
+                            continue
 
-                            env = premeta.get('env', {})
-                            if env:
-                                for k, v in env.items():
-                                    matrix_entry[k] = v
-                                    pre_values.append(v)
+                        build_args = premeta.get('build-args')
+                        if build_args:
+                            for k, v in build_args.items():
+                                matrix_entry['build_args'] += \
+                                    ' --build-arg %s=%s' % (k, v)
 
-                        name = '{0} {1} {2} {3}'.format(
-                            os_env,
-                            pre,
-                            ' '.join(pre_values),
-                            version)
-                        matrix_entry['pretty_name'] = name.replace('  ', ' ')
+                        env = premeta.get('env', {})
+                        if env:
+                            for k, v in env.items():
+                                matrix_entry[k] = v
+                                pre_values.append(v)
 
-                        YAML['jobs'][job]['strategy']['matrix']['include'].append(matrix_entry)
+                    name = '{0} {1} {2} {3}'.format(
+                        os_env,
+                        pre,
+                        ' '.join(pre_values),
+                        version)
+                    matrix_entry['pretty_name'] = name.replace('  ', ' ')
+
+                    YAML['jobs'][job]['strategy']['matrix']['include'].append(matrix_entry)
 
 
 def matrixbar(num_entries):
