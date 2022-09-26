@@ -2,9 +2,7 @@ FROM registry.access.redhat.com/ubi7/ubi
 
 RUN \
   yum update -y && \
-  yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm \
-  http://mirror.centos.org/centos-7/7/os/x86_64/Packages/python-virtualenv-15.1.0-4.el7_7.noarch.rpm \
-  rh-python38-python rh-python38-python-pip procps-ng wget which && \
+  yum install -y rh-python38-python rh-python38-python-pip procps-ng wget which && \
   yum clean all
 
 ENV PATH=/opt/rh/rh-python38/root/usr/local/bin:/opt/rh/rh-python38/root/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
