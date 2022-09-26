@@ -31,6 +31,9 @@ dockerfiles:
   ubi9:
     - pip:
     - tar:
+  ubuntu2204:
+    - pip:
+    - tar:
   ubuntu2004:
     - pip:
     - tar:

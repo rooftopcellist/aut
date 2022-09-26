@@ -198,6 +198,54 @@ jobs:
           product: ansible-core
           version: 2.14.0rc1
         - build_args: ''
+          dockerfile: ubuntu2204
+          pre: pip
+          pretty_name: ubuntu2204 pip 2.11.12
+          product: ansible-core
+          version: 2.11.12
+        - build_args: ''
+          dockerfile: ubuntu2204
+          pre: pip
+          pretty_name: ubuntu2204 pip 2.12.10
+          product: ansible-core
+          version: 2.12.10
+        - build_args: ''
+          dockerfile: ubuntu2204
+          pre: pip
+          pretty_name: ubuntu2204 pip 2.13.5
+          product: ansible-core
+          version: 2.13.5
+        - build_args: ''
+          dockerfile: ubuntu2204
+          pre: pip
+          pretty_name: ubuntu2204 pip 2.14.0rc1
+          product: ansible-core
+          version: 2.14.0rc1
+        - build_args: ''
+          dockerfile: ubuntu2204
+          pre: tar
+          pretty_name: ubuntu2204 tar 2.11.12
+          product: ansible-core
+          version: 2.11.12
+        - build_args: ''
+          dockerfile: ubuntu2204
+          pre: tar
+          pretty_name: ubuntu2204 tar 2.12.10
+          product: ansible-core
+          version: 2.12.10
+        - build_args: ''
+          dockerfile: ubuntu2204
+          pre: tar
+          pretty_name: ubuntu2204 tar 2.13.5
+          product: ansible-core
+          version: 2.13.5
+        - build_args: ''
+          dockerfile: ubuntu2204
+          pre: tar
+          pretty_name: ubuntu2204 tar 2.14.0rc1
+          product: ansible-core
+          version: 2.14.0rc1
+        - build_args: ''
           dockerfile: ubuntu2004
           pre: pip
           pretty_name: ubuntu2004 pip 2.11.12
