@@ -1,5 +1,7 @@
 FROM docker.io/library/ubuntu:18.04
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update && \
   apt-get -y upgrade && \
   apt-get -y install libffi-dev python3.8 python3.8-dev python3-pip wget && \
