@@ -28,6 +28,9 @@ dockerfiles:
   ubi8:
     - pip:
     - tar:
+  ubi9:
+    - pip:
+    - tar:
   ubuntu2004:
     - pip:
         version_re: '^2\.(?:11|12|13)'

@@ -1,0 +1,10 @@
+FROM registry.access.redhat.com/ubi9/ubi
+
+RUN \
+  dnf update -y && \
+  dnf -y install procps-ng python3-pip wget && \
+  dnf clean all
+
+COPY . /opt
+
+ENTRYPOINT ["bash", "/opt/entrypoint.sh"]
