@@ -1,10 +1,10 @@
 FROM registry.access.redhat.com/ubi8/ubi
 
 RUN \
-  yum update -y && \
-  yum -y module enable python39 && \
-  yum -y install procps-ng python39-pip wget && \
-  yum clean all
+  dnf update -y && \
+  dnf -y module enable python39 && \
+  dnf -y install procps-ng python39-pip wget && \
+  dnf clean all
 
 COPY . /opt
 
