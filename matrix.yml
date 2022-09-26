@@ -17,7 +17,7 @@ ansible-core:
 # `docker build`. When this is specified, the pre is skipped in the default
 # case (and ONLY run with the build args specified).
 dockerfiles:
-  py310-rc-buster:
+  py310-bullseye:
     - pip:
     - tar:
   ubi7:

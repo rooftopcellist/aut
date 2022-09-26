@@ -18,51 +18,51 @@ jobs:
       matrix:
         include:
         - build_args: ''
-          dockerfile: py310-rc-buster
+          dockerfile: py310-bullseye
           pre: pip
-          pretty_name: py310-rc-buster pip 2.11.12
+          pretty_name: py310-bullseye pip 2.11.12
           product: ansible-core
           version: 2.11.12
         - build_args: ''
-          dockerfile: py310-rc-buster
+          dockerfile: py310-bullseye
           pre: pip
-          pretty_name: py310-rc-buster pip 2.12.10
+          pretty_name: py310-bullseye pip 2.12.10
           product: ansible-core
           version: 2.12.10
         - build_args: ''
-          dockerfile: py310-rc-buster
+          dockerfile: py310-bullseye
           pre: pip
-          pretty_name: py310-rc-buster pip 2.13.5
+          pretty_name: py310-bullseye pip 2.13.5
           product: ansible-core
           version: 2.13.5
         - build_args: ''
-          dockerfile: py310-rc-buster
+          dockerfile: py310-bullseye
           pre: pip
-          pretty_name: py310-rc-buster pip 2.14.0rc1
+          pretty_name: py310-bullseye pip 2.14.0rc1
           product: ansible-core
           version: 2.14.0rc1
         - build_args: ''
-          dockerfile: py310-rc-buster
+          dockerfile: py310-bullseye
           pre: tar
-          pretty_name: py310-rc-buster tar 2.11.12
+          pretty_name: py310-bullseye tar 2.11.12
           product: ansible-core
           version: 2.11.12
         - build_args: ''
-          dockerfile: py310-rc-buster
+          dockerfile: py310-bullseye
           pre: tar
-          pretty_name: py310-rc-buster tar 2.12.10
+          pretty_name: py310-bullseye tar 2.12.10
           product: ansible-core
           version: 2.12.10
         - build_args: ''
-          dockerfile: py310-rc-buster
+          dockerfile: py310-bullseye
           pre: tar
-          pretty_name: py310-rc-buster tar 2.13.5
+          pretty_name: py310-bullseye tar 2.13.5
           product: ansible-core
           version: 2.13.5
         - build_args: ''
-          dockerfile: py310-rc-buster
+          dockerfile: py310-bullseye
           pre: tar
-          pretty_name: py310-rc-buster tar 2.14.0rc1
+          pretty_name: py310-bullseye tar 2.14.0rc1
           product: ansible-core
           version: 2.14.0rc1
         - build_args: ''
