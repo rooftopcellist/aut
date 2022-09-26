@@ -33,9 +33,7 @@ dockerfiles:
     - tar:
   ubuntu2004:
     - pip:
-        version_re: '^2\.(?:11|12|13)'
     - tar:
-        version_re: '^2\.(?:11|12|13)'
   ubuntu1804:
     - pip:
         version_re: '^2\.(?:11|12|13)'

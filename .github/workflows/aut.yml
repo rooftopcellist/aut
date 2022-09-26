@@ -217,6 +217,12 @@ jobs:
           version: 2.13.5
         - build_args: ''
           dockerfile: ubuntu2004
+          pre: pip
+          pretty_name: ubuntu2004 pip 2.14.0rc1
+          product: ansible-core
+          version: 2.14.0rc1
+        - build_args: ''
+          dockerfile: ubuntu2004
           pre: tar
           pretty_name: ubuntu2004 tar 2.11.12
           product: ansible-core
@@ -233,6 +239,12 @@ jobs:
           pretty_name: ubuntu2004 tar 2.13.5
           product: ansible-core
           version: 2.13.5
+        - build_args: ''
+          dockerfile: ubuntu2004
+          pre: tar
+          pretty_name: ubuntu2004 tar 2.14.0rc1
+          product: ansible-core
+          version: 2.14.0rc1
         - build_args: ''
           dockerfile: ubuntu1804
           pre: pip
