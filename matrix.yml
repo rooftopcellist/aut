@@ -19,14 +19,19 @@ ansible-core:
 dockerfiles:
   centos7:
     - pip:
+        version_re: '^2\.(?:11|12|13)'
     - pip-latest:
+        version_re: '^2\.(?:11|12|13)'
     - tar:
+        version_re: '^2\.(?:11|12|13)'
   py310-rc-buster:
     - pip:
     - tar:
   ubi7:
     - pip:
+        version_re: '^2\.(?:11|12|13)'
     - tar:
+        version_re: '^2\.(?:11|12|13)'
   ubi7-py35:
     - pip-latest:
         version_re: '^2\.11'
@@ -35,12 +40,16 @@ dockerfiles:
     - tar:
   ubuntu2004:
     - pip:
+        version_re: '^2\.(?:11|12|13)'
     - tar:
+        version_re: '^2\.(?:11|12|13)'
   ubuntu1804:
     - pip:
+        version_re: '^2\.(?:11|12|13)'
     # this is buggy right now I guess? traceback
     #- pip-latest:
     - tar:
+        version_re: '^2\.(?:11|12|13)'
 
 # macOS is a bit of a special case, we don't do any docker stuff, just skip
 # straight to pre scripts.
