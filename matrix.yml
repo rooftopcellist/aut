@@ -17,13 +17,6 @@ ansible-core:
 # `docker build`. When this is specified, the pre is skipped in the default
 # case (and ONLY run with the build args specified).
 dockerfiles:
-  centos7:
-    - pip:
-        version_re: '^2\.(?:11|12|13)'
-    - pip-latest:
-        version_re: '^2\.(?:11|12|13)'
-    - tar:
-        version_re: '^2\.(?:11|12|13)'
   py310-rc-buster:
     - pip:
     - tar:
