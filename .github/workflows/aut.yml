@@ -102,12 +102,6 @@ jobs:
           product: ansible-core
           version: 2.13.5
         - build_args: ''
-          dockerfile: ubi7-py35
-          pre: pip-latest
-          pretty_name: ubi7-py35 pip-latest 2.11.12
-          product: ansible-core
-          version: 2.11.12
-        - build_args: ''
           dockerfile: ubi8
           pre: pip
           pretty_name: ubi8 pip 2.11.12
