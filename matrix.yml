@@ -1,7 +1,9 @@
 ansible-core:
   - 2.12.10
   - 2.13.6
+  - 2.13.7rc1
   - 2.14.0
+  - 2.14.1rc1
 
 # This is a mapping of dockerfile -> "pre" scripts
 # Note that the matrix can grow rapidly and we are limited to 256 matrix entries
@@ -55,7 +57,7 @@ macOS:
   #      version_re: "^(?!2\\.8)"
   #  - tar:
   #      version_re: "^(?!2\\.8)"
-  macos-10.15:
+  macos-12:
     - pip:
         version_re: "^(?!2\\.8)"
     - tar:
