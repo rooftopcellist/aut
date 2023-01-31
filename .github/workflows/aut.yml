@@ -32,9 +32,9 @@ jobs:
         - build_args: ''
           dockerfile: py310-bullseye
           pre: pip
-          pretty_name: py310-bullseye pip 2.14.2rc1
+          pretty_name: py310-bullseye pip 2.14.2
           product: ansible-core
-          version: 2.14.2rc1
+          version: 2.14.2
         - build_args: ''
           dockerfile: py310-bullseye
           pre: tar
@@ -50,9 +50,9 @@ jobs:
         - build_args: ''
           dockerfile: py310-bullseye
           pre: tar
-          pretty_name: py310-bullseye tar 2.14.2rc1
+          pretty_name: py310-bullseye tar 2.14.2
           product: ansible-core
-          version: 2.14.2rc1
+          version: 2.14.2
         - build_args: ''
           dockerfile: ubi7
           pre: pip
@@ -92,9 +92,9 @@ jobs:
         - build_args: ''
           dockerfile: ubi8
           pre: pip
-          pretty_name: ubi8 pip 2.14.2rc1
+          pretty_name: ubi8 pip 2.14.2
           product: ansible-core
-          version: 2.14.2rc1
+          version: 2.14.2
         - build_args: ''
           dockerfile: ubi8
           pre: tar
@@ -110,9 +110,9 @@ jobs:
         - build_args: ''
           dockerfile: ubi8
           pre: tar
-          pretty_name: ubi8 tar 2.14.2rc1
+          pretty_name: ubi8 tar 2.14.2
           product: ansible-core
-          version: 2.14.2rc1
+          version: 2.14.2
         - build_args: ''
           dockerfile: ubi9
           pre: pip
@@ -128,9 +128,9 @@ jobs:
         - build_args: ''
           dockerfile: ubi9
           pre: pip
-          pretty_name: ubi9 pip 2.14.2rc1
+          pretty_name: ubi9 pip 2.14.2
           product: ansible-core
-          version: 2.14.2rc1
+          version: 2.14.2
         - build_args: ''
           dockerfile: ubi9
           pre: tar
@@ -146,9 +146,9 @@ jobs:
         - build_args: ''
           dockerfile: ubi9
           pre: tar
-          pretty_name: ubi9 tar 2.14.2rc1
+          pretty_name: ubi9 tar 2.14.2
           product: ansible-core
-          version: 2.14.2rc1
+          version: 2.14.2
         - build_args: ''
           dockerfile: ubuntu2204
           pre: pip
@@ -164,9 +164,9 @@ jobs:
         - build_args: ''
           dockerfile: ubuntu2204
           pre: pip
-          pretty_name: ubuntu2204 pip 2.14.2rc1
+          pretty_name: ubuntu2204 pip 2.14.2
           product: ansible-core
-          version: 2.14.2rc1
+          version: 2.14.2
         - build_args: ''
           dockerfile: ubuntu2204
           pre: tar
@@ -182,9 +182,9 @@ jobs:
         - build_args: ''
           dockerfile: ubuntu2204
           pre: tar
-          pretty_name: ubuntu2204 tar 2.14.2rc1
+          pretty_name: ubuntu2204 tar 2.14.2
           product: ansible-core
-          version: 2.14.2rc1
+          version: 2.14.2
         - build_args: ''
           dockerfile: ubuntu2004
           pre: pip
@@ -200,9 +200,9 @@ jobs:
         - build_args: ''
           dockerfile: ubuntu2004
           pre: pip
-          pretty_name: ubuntu2004 pip 2.14.2rc1
+          pretty_name: ubuntu2004 pip 2.14.2
           product: ansible-core
-          version: 2.14.2rc1
+          version: 2.14.2
         - build_args: ''
           dockerfile: ubuntu2004
           pre: tar
@@ -218,9 +218,9 @@ jobs:
         - build_args: ''
           dockerfile: ubuntu2004
           pre: tar
-          pretty_name: ubuntu2004 tar 2.14.2rc1
+          pretty_name: ubuntu2004 tar 2.14.2
           product: ansible-core
-          version: 2.14.2rc1
+          version: 2.14.2
         - build_args: ''
           dockerfile: ubuntu1804
           pre: pip
@@ -279,9 +279,9 @@ jobs:
         - build_args: ''
           dockerfile: macos-12
           pre: pip
-          pretty_name: macos-12 pip 2.14.2rc1
+          pretty_name: macos-12 pip 2.14.2
           product: ansible-core
-          version: 2.14.2rc1
+          version: 2.14.2
         - build_args: ''
           dockerfile: macos-12
           pre: tar
@@ -297,9 +297,9 @@ jobs:
         - build_args: ''
           dockerfile: macos-12
           pre: tar
-          pretty_name: macos-12 tar 2.14.2rc1
+          pretty_name: macos-12 tar 2.14.2
           product: ansible-core
-          version: 2.14.2rc1
+          version: 2.14.2
     timeout-minutes: 20
 name: Ansible User Artifact Tests
 'on':
